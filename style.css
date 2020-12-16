@@ -116,3 +116,25 @@ h1 {
 .day-3 {
     background-image: url(/assets/images/day-3.jpg);
 }
+
+.day {
+    text-align: center;
+    }
+
+.lineup {
+list-style: none;
+}
+
+.lineup h2 {
+    margin-bottom: 6px;
+}
+
+.lineup li {
+    margin-bottom: 24px;
+}
+
+.date {
+ color: #FFEECF;
+ margin-bottom: 48px;
+
+}

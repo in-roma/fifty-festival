@@ -18,8 +18,29 @@
     line-height: 1.5;
   }
 
-  .marquee{
+  .marquee,
+  .lunch-medium, 
+  .date,
+  .lineup h2 {
     font-family:'LunchType-Medium', sans-serif;
+  }
+
+  .marquee {
     font-size: 5vw;
     line-height: 1;
+  }
+
+  .date {
+      font-size: 28px;
+      line-height: 1;
+  }
+
+  .lineup h2 {
+      font-size: 56px;
+      line-height: 1;
+  }
+
+  .lineup p {
+    font-size: 21px;
+
   }

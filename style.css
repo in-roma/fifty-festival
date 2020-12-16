@@ -48,13 +48,21 @@ h1 {
     width: 100%;
 }
 
-.marquee{
+.marquee {
     position: absolute;
     top: 3vh;
     left: 0;
     width: 100%;
-    font-size: 5vw;
+    overflow: hidden;
+}
 
+.marquee span {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+
+    /* animation */
+    animation:  moveLeft 260s infinite;
 }
 
 .bg-cover {
@@ -63,6 +71,14 @@ h1 {
     background-repeat: no-repeat;
 }
 
+@keyframes moveLeft{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2000vw);
+    }
+}
 
 @keyframes fadeIn {
     0% {
@@ -83,4 +99,8 @@ h1 {
     animation-duration: 3s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+}
+
+.mix-difference {
+    mix-blend-mode: difference;
 }

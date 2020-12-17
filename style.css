@@ -4,7 +4,7 @@ body {
 }
 
 h1 { 
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -62,14 +62,62 @@ h1 {
     white-space: nowrap;
 
     /* animation */
-    animation:  moveLeft 320s infinite;
+    animation:  moveLeft 300s infinite;
 }
+
+.day {
+    position: relative;
+    text-align: center;
+    }
+
+.day-1 {
+    background-color: #FD76A7;
+}
+
+.day-2 {
+    background-color: #1BB190;
+}
+
+.day-3 {
+    background-image: url(/assets/images/day-3.jpg);
+}
+
+.lineup {
+list-style: none;
+
+}
+
+.lineup h2 {
+    margin-bottom: 6px;
+}
+
+.lineup li {
+    margin-bottom: 24px;
+}
+
+.date {
+ color: #FFEECF;
+ margin-bottom: 48px;
+
+}
+
+/* Utilities */
 
 .bg-cover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.center {
+    text-align: center;
+}
+
+.mix-difference {
+    mix-blend-mode: difference;
+}
+
+/* Animations */
 
 @keyframes moveLeft{
     0% {
@@ -99,42 +147,4 @@ h1 {
     animation-duration: 3s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
-
-.mix-difference {
-    mix-blend-mode: difference;
-}
-
-.day-1 {
-    background-color: #FD76A7;
-}
-
-.day-2 {
-    background-color: #1BB190;
-}
-
-.day-3 {
-    background-image: url(/assets/images/day-3.jpg);
-}
-
-.day {
-    text-align: center;
-    }
-
-.lineup {
-list-style: none;
-}
-
-.lineup h2 {
-    margin-bottom: 6px;
-}
-
-.lineup li {
-    margin-bottom: 24px;
-}
-
-.date {
- color: #FFEECF;
- margin-bottom: 48px;
-
 }

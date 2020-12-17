@@ -38,9 +38,10 @@
   .lineup h2 {
       font-size:38px;
       line-height: 1;
+      color: black;
   }
 
   .lineup p {
     font-size: 22px;
-
+    color: black;
   }

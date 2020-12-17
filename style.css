@@ -24,6 +24,8 @@ h1 {
     max-width: 810px;
     margin: auto;
     color: white;
+    position: relative;
+    z-index: 2;
 }
 
 .intro {
@@ -68,6 +70,7 @@ h1 {
 .day {
     position: relative;
     text-align: center;
+    z-index: 2;
     }
 
 .day-1 {

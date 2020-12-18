@@ -22,7 +22,9 @@
   .lunch-medium, 
   .date,
   .lineup h2,
-  .button {
+  .button,
+  .register h2,
+  .submit {
     font-family:'LunchType-Medium', sans-serif;
   }
 
@@ -33,9 +35,8 @@
 
   .intro p {
     font-size: 32px;
-    line-height: 1.0;
+    line-height: 1.4;
 }
-
 
   .date {
       font-size: 28px;
@@ -52,3 +53,10 @@
     font-size: 20px;
     color: black;
   }
+
+
+.register h2 {
+  color: black;
+  font-size: 40px;   
+  line-height: 1.1;
+}

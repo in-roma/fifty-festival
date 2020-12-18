@@ -24,17 +24,12 @@ h1 {
     max-width: 810px;
     margin: auto;
     color: white;
-    position: relative;
+    /* position: relative; */
     z-index: 2;
 }
 
 .intro {
     background-image: url(/assets/images/intro.jpg);
-}
-
-.intro p {
-    font-size: 36px;
-    line-height: 1.2;
 }
 
 .logo {
@@ -71,7 +66,8 @@ h1 {
     position: relative;
     text-align: center;
     z-index: 2;
-    }
+    overflow: hidden;
+}
 
 .day-1 {
     background-color: #FD76A7;
@@ -87,6 +83,7 @@ h1 {
 
 .lineup {
 list-style: none;
+padding-inline-start: 0px;
 
 }
 

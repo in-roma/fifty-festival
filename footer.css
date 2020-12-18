@@ -26,6 +26,7 @@ input {
     background: none;
     border: none;
     font-size: 21px;
+    outline: none;
 }
 
 .email-input {

@@ -68,7 +68,7 @@ h1 {
     z-index: 2;
     overflow: hidden;
 }
- qqqq
+
 .day-1 {
     background-color: #FD76A7;
 }
@@ -177,6 +177,7 @@ padding-inline-start: 0px;
         top: auto;
         left: auto;
         width: 90vw;
+        margin-bottom: 24px;
     }
     .logo {
         max-width: 64px;

@@ -54,7 +54,7 @@ squiggles.forEach((squiggle, index) =>
 	)
 );
 
-// Managing scrolling states
+// Managing animation states
 
 inView('.section')
 	.on('enter', (section) => {
@@ -78,5 +78,18 @@ sections.forEach((section, index) => {
 	shapes.forEach((shape, index) => {
 		const delay = (artist.length + index) * 100;
 		shape.style.transitionDelay = delay + 'ms';
+	});
+});
+
+// Managing scrolling
+
+const scrollLinks = document.querySelectorAll('.js-scroll');
+scrollLinks.forEach((link) => {
+	link.addEventListener('click', (event) => {
+		event.preventDefault();
+		const href = link.getAttribute('href');
+		document.querySelector(href).scrollIntoView({
+			behavior: 'smooth',
+		});
 	});
 });

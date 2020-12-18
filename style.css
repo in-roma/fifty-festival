@@ -68,7 +68,7 @@ h1 {
     z-index: 2;
     overflow: hidden;
 }
-
+ qqqq
 .day-1 {
     background-color: #FD76A7;
 }
@@ -99,6 +99,25 @@ padding-inline-start: 0px;
  color: #FFEECF;
  margin-bottom: 48px;
 
+}
+
+.scroll-to {
+
+    width: 64px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3vh;
+    
+    background-image: url(/assets/images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.scroll-to-intro {
+    background-image: url(/assets/images/down-arrow-light.svg);
 }
 
 /* Utilities */

@@ -36,7 +36,7 @@ circles.forEach((circle, index) =>
 // Animation squiggles
 
 const squiggles = document.querySelectorAll('.squiggle');
-const randomNumber = random(0, 360);
+const randomNumber = random(0, 270);
 squiggles.forEach((squiggle, index) =>
 	squiggle.animate(
 		[
@@ -64,9 +64,10 @@ inView('.section')
 		section.classList.remove('in-viewport');
 	});
 
-inView.treshold(0.8);
+inView.treshold(0.4);
 
 const sections = document.querySelectorAll('.section');
+
 sections.forEach((section, index) => {
 	const artists = section.querySelectorAll('.lineup li');
 	const shapes = section.querySelectorAll('.shape');
@@ -75,19 +76,21 @@ sections.forEach((section, index) => {
 		const delay = index * 100;
 		artist.style.transitionDelay = delay + 'ms';
 	});
+
 	shapes.forEach((shape, index) => {
-		const delay = (artist.length + index) * 100;
+		const delay = (artists.length + index) * 100;
 		shape.style.transitionDelay = delay + 'ms';
 	});
 });
 
 // Managing scrolling
 
-const scrollLinks = document.querySelectorAll('.js-scroll');
 scrollLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
 		event.preventDefault();
+
 		const href = link.getAttribute('href');
+		console.log(href);
 		document.querySelector(href).scrollIntoView({
 			behavior: 'smooth',
 		});

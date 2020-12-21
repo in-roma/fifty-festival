@@ -52,7 +52,7 @@ input {
     background-image: url(/assets/images/eyes_open.svg);
     position: absolute;
     top: 20vh;
-    left: 20vw;
+    left: 18.6vw;
     z-index: 3;
 }
 
@@ -83,8 +83,8 @@ input {
 }
 
 .footer img {
-    max-width: 87px;
-    margin-bottom: 12px;
+   width: 80px;
+    margin-bottom: 24px;
 }
 
 .button {
@@ -95,6 +95,21 @@ input {
     min-width: 140px;
     text-align: center;
     text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+
+    .eyes {
+        top: 14vh;
+        left: 6vw;
+        z-index: 3;
+    }
+    .hand {
+        bottom: 40vh;
+        right: 12vw;
+        z-index: 3;
+    }
 }
 
 @media (max-width: 780px) {
@@ -109,29 +124,18 @@ input {
     .form {
         margin: 24px 0;
     }
+
+    input {
+        font-size: 18px;
+    }
     .eyes {
         top: 14vh;
-        left: 4vw;
+        left: 2vw;
         z-index: 3;
     }
     .hand {
-        bottom: 42vh;
-        right: 10vw;
-        z-index: 3;
-    }
-}
-
-@media (max-width: 1200px) {
-
-
-    .eyes {
-        top: 14vh;
-        left: 18vw;
-        z-index: 3;
-    }
-    .hand {
-        bottom: 42vh;
-        right: 18vw;
+        bottom: 40vh;
+        right: 2vw;
         z-index: 3;
     }
 }

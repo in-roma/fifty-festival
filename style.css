@@ -96,7 +96,7 @@ padding-inline-start: 0px;
 }
 
 .date {
- color: #FFEECF;
+ color: #000000;
  margin-bottom: 48px;
 
 }
@@ -108,7 +108,7 @@ padding-inline-start: 0px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 3vh;
+    bottom: 16px;
     
     background-image: url(/assets/images/down-arrow.svg);
     background-repeat: no-repeat;
@@ -163,8 +163,8 @@ padding-inline-start: 0px;
 .appear {
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -177,15 +177,18 @@ padding-inline-start: 0px;
         top: auto;
         left: auto;
         width: 90vw;
-        margin-bottom: 24px;
+        margin-bottom: 12px;
+        font-size: 24px;
     }
     .logo {
-        max-width: 64px;
-        margin-bottom: 24px;
+        max-width: 120px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     .intro p {
         font-size: 26px;
         line-height: 1.4;
+        margin-top: 24px;
     }
    .scroll-to {
     display: none;

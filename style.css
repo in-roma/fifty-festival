@@ -5,7 +5,7 @@
     margin: 0;
   }
 
-  /* Fonts */
+/* Fonts */
 
  @font-face {
     font-family: 'LunchType-Regular';
@@ -32,6 +32,7 @@
   }
 
 
+/* Main elements */
 
 body {
     font-family:'LunchType-Regular', sans-serif;
@@ -41,25 +42,10 @@ body {
     color: #333333;
 }
 
-
-
-
-
-
-
-
-
-
-h1 { 
-    font-size: 22px;
-    font-weight: 700;
-}
-
 .section {
     position: relative;
     min-height: 100vh;  
     display: flex;
-
 }
 
 .section-pad {
@@ -74,6 +60,8 @@ h1 {
     /* position: relative; */
     z-index: 2;
 }
+
+/* Intro */
 
 .intro {
     background-image: url(/assets/images/intro.jpg);
@@ -108,14 +96,17 @@ h1 {
     mix-blend-mode: difference;
 }
 
+.mix-difference {
+    mix-blend-mode: difference;
+}
+
 .marquee span {
     display: block;
-    position: relative;
     white-space: nowrap;
-
-    /* animation */
     animation:  moveLeft 300s infinite;
 }
+
+/* Sections */
 
 .day {
     position: relative;
@@ -139,7 +130,6 @@ h1 {
 .lineup {
 list-style: none;
 padding-inline-start: 0px;
-
 }
 
 .lineup h2 {
@@ -158,7 +148,6 @@ padding-inline-start: 0px;
     color: black;
 }
 
-
 .date {
     font-size: 24px;
     line-height: 1;
@@ -176,7 +165,6 @@ padding-inline-start: 0px;
     left: 50%;
     transform: translateX(-50%);
     bottom: 16px;
-    
     background-image: url(/assets/images/down-arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -197,10 +185,6 @@ padding-inline-start: 0px;
 
 .center {
     text-align: center;
-}
-
-.mix-difference {
-    mix-blend-mode: difference;
 }
 
 /* Animations */
@@ -235,8 +219,7 @@ padding-inline-start: 0px;
     animation-fill-mode: forwards;
 }
 
-
-/* Responsive  */
+/* Responsive setup  */
 
 @media (max-width: 780px) {
     .marquee {

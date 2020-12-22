@@ -4,19 +4,14 @@ function marquee() {
 	const title = 'FIFTY Music Festival — November 10–12 2021, Desert Valley';
 	const marqueeText = new Array(50).fill(title).join(' ——— ');
 	const marquee = document.querySelector('.marquee span');
-
 	marquee.innerHTML = marqueeText;
 }
 marquee();
 
-function random(min, max) {
-	return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
 // Animation circles
 
 const circles = document.querySelectorAll('.circle');
-circles.forEach((circle, index) =>
+circles.forEach((circle, index) => {
 	circle.animate(
 		[
 			{ transform: 'scale(1)' },
@@ -30,14 +25,18 @@ circles.forEach((circle, index) =>
 			duration: 3000,
 			iterations: Infinity,
 		}
-	)
-);
+	);
+});
 
 // Animation squiggles
 
+function random(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 const squiggles = document.querySelectorAll('.squiggle');
 const randomNumber = random(0, 270);
-squiggles.forEach((squiggle, index) =>
+squiggles.forEach((squiggle, index) => {
 	squiggle.animate(
 		[
 			{ transform: 'rotate(0deg)' },
@@ -51,8 +50,8 @@ squiggles.forEach((squiggle, index) =>
 			duration: 5000,
 			iterations: Infinity,
 		}
-	)
-);
+	);
+});
 
 // Managing animation states
 
@@ -90,7 +89,6 @@ scrollLinks.forEach((link) => {
 		event.preventDefault();
 
 		const href = link.getAttribute('href');
-		console.log(href);
 		document.querySelector(href).scrollIntoView({
 			behavior: 'smooth',
 		});

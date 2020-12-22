@@ -12,7 +12,11 @@
     display: flex;    
 }
 
-.register h2{
+.register h2 {
+    color: black;
+    font-size: 40px;   
+    line-height: 1.1;
+    font-family:'LunchType-Medium', sans-serif;
     margin-bottom: 48px;
 
 }

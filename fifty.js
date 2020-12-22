@@ -48,7 +48,7 @@ squiggles.forEach((squiggle, index) =>
 		],
 		{
 			delay: 300 * index,
-			duration: 9000,
+			duration: 5000,
 			iterations: Infinity,
 		}
 	)
@@ -84,7 +84,7 @@ sections.forEach((section, index) => {
 });
 
 // Managing scrolling
-
+const scrollLinks = document.querySelectorAll('.js-scroll');
 scrollLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
 		event.preventDefault();

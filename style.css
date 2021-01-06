@@ -9,16 +9,16 @@
 
  @font-face {
     font-family: 'LunchType-Regular';
-    src: url('./assets/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
-         url('./assets/fonts/lunchtype22-regular-webfont.woff') format('woff'),
-         url('./assets/fonts/lunchtype22-regular-webfont.ttf') format('truetype');
+    src: url('/assets/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/lunchtype22-regular-webfont.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'LunchType-Medium';
-    src: url('./assets/fonts/lunchtype24-medium-expanded-webfont.woff2') format('woff2'),
-         url('./assets/fonts/lunchtype24-medium-expanded-webfont.woff') format('woff'),
-         url('./assets/fonts/lunchtype24-medium-expanded-webfont.ttf') format('truetype');
+    src: url('/assets/fonts/lunchtype24-medium-expanded-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lunchtype24-medium-expanded-webfont.woff') format('woff'),
+         url('/assets/fonts/lunchtype24-medium-expanded-webfont.ttf') format('truetype');
   }
 
   .marquee,
@@ -64,7 +64,7 @@ body {
 /* Intro */
 
 .intro {
-    background-image: url('./assets/images/intro.jpg');
+    background-image: url('/assets/images/intro.jpg');
 }
 
 .intro p {
@@ -123,7 +123,7 @@ body {
 }
 
 .day-3 {
-    background-image: url('./assets/images/day-3.jpg');
+    background-image: url('/assets/images/day-3.jpg');
 }
 
 .lineup {
@@ -163,14 +163,14 @@ padding-inline-start: 0px;
     left: 50%;
     transform: translateX(-50%);
     bottom: 16px;'
-    background-image: url('./assets/images/down-arrow.svg');
+    background-image: url('/assets/images/down-arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .scroll-to-intro {
-    background-image: url('./assets/images/down-arrow-light.svg');
+    background-image: url('/assets/images/down-arrow-light.svg');
 }
 
 /* Utilities */

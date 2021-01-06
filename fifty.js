@@ -83,6 +83,7 @@ sections.forEach((section, index) => {
 });
 
 // Managing scrolling
+
 const scrollLinks = document.querySelectorAll('.js-scroll');
 scrollLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {

@@ -162,7 +162,7 @@ padding-inline-start: 0px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 16px;'
+    bottom: 16px;
     background-image: url('./assets/images/down-arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -219,7 +219,7 @@ padding-inline-start: 0px;
 
 /* Responsive setup  */
 
-@media (max-width: 780px) {
+@media (max-width: 640px) {
     .marquee {
         position: relative;
         top: auto;

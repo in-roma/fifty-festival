@@ -63,7 +63,7 @@ inView('.section')
 		section.classList.remove('in-viewport');
 	});
 
-inView.threshold(0.2);
+inView.threshold(0.7);
 
 const sections = document.querySelectorAll('.section');
 

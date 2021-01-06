@@ -12,7 +12,7 @@
 .squiggle {
   width: 303px;
   height: 63px;
-  background-image: url(/assets/images/squiggle.svg);
+  background-image: url('./assets/images/squiggle.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

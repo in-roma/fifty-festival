@@ -53,7 +53,7 @@ input {
 .eyes {
     width: 128px;
     height: 32px;
-    background-image: url(/assets/images/eyes_open.svg);
+    background-image: url('./assets/images/eyes_open.svg');
     position: absolute;
     top: 20vh;
     left: 18.6vw;
@@ -63,7 +63,7 @@ input {
 .hand {
     width: 57px;
     height: 85.5px;
-    background-image: url(/assets/images/ok_hand.svg);
+    background-image: url('./assets/images/ok_hand.svg');
     align-self: flex-end;
     position: absolute;
     bottom: 50vh;

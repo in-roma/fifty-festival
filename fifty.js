@@ -8,16 +8,21 @@ function marquee() {
 }
 marquee();
 
+// Random number function
+
+function random(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // Animation circles
 
 const circles = document.querySelectorAll('.circle');
+
 circles.forEach((circle, index) => {
 	circle.animate(
 		[
 			{ transform: 'scale(1)' },
-
-			{ transform: 'scale(1.4)' },
-
+			{ transform: 'scale(1.2)' },
 			{ transform: 'scale(1)' },
 		],
 		{
@@ -30,19 +35,14 @@ circles.forEach((circle, index) => {
 
 // Animation squiggles
 
-function random(min, max) {
-	return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
 const squiggles = document.querySelectorAll('.squiggle');
-const randomNumber = random(0, 270);
+
 squiggles.forEach((squiggle, index) => {
+	const randomNumber = random(0, 45);
 	squiggle.animate(
 		[
 			{ transform: 'rotate(0deg)' },
-
-			{ transform: 'rotate(' + randomNumber + 'deg)' },
-
+			{ transform: `rotate(${randomNumber}deg)` },
 			{ transform: 'rotate(0deg)' },
 		],
 		{
@@ -63,7 +63,7 @@ inView('.section')
 		section.classList.remove('in-viewport');
 	});
 
-inView.treshold(0.4);
+inView.threshold(0.2);
 
 const sections = document.querySelectorAll('.section');
 
